@@ -1,0 +1,10 @@
+#!/bin/bash
+
+file_name='number.txt'
+cur_dir=$(pwd)
+cd $1
+numfiles=(*)
+numfiles=${#numfiles[@]}
+cd $cur_dir
+touch $file_name
+echo $numfiles >> $file_name

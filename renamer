@@ -1,0 +1,8 @@
+#!/bin/bash
+
+i=0
+cd $1
+for file in *; do
+mv -- "$file" "$2$i.jpg"
+let i=i+1
+done
